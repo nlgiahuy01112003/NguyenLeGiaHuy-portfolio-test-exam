@@ -49,3 +49,4 @@ async function makeFavicons() {
 }
 
 makeFavicons().catch(console.error);
+

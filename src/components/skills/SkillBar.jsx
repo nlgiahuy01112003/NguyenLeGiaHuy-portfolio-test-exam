@@ -36,3 +36,4 @@ export default function SkillBar({ skill, index = 0 }) {
     </div>
   );
 }
+

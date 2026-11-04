@@ -15,3 +15,4 @@ export default function Card({ children, className = '', hover = true, onClick, 
     </Component>
   );
 }
+

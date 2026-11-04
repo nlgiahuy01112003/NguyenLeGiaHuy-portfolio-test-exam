@@ -60,3 +60,4 @@ export default function Modal({ isOpen, onClose, title, children, maxWidth = '65
     document.body,
   );
 }
+
