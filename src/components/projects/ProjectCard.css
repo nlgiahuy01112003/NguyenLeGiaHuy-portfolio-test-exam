@@ -44,6 +44,7 @@
   color: #fff;
   border-radius: var(--radius-pill);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .project-card__badge-featured {
@@ -73,6 +74,7 @@
   opacity: 0;
   transition: opacity var(--dur-fast);
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .project-card__thumb-wrap:hover .project-card__quick-view {

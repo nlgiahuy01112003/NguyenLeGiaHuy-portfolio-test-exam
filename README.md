@@ -70,7 +70,7 @@ npm run preview
   - Trình độ ngoại ngữ: Tiếng Việt (Bản ngữ), Tiếng Anh (CEFR B1 — đọc hiểu tài liệu kỹ thuật tốt).
 - **Trang Dự Án (Projects):**
   - **Data-driven:** Dữ liệu chuẩn hóa trong `src/data/projects.js`, render bằng `.map()`.
-  - Toàn bộ ảnh dự án là **ảnh chụp màn hình thực tế** lấy từ mã nguồn các dự án đã chạy (TechStore, HyperGlot, AI Exam, POMI Milk Tea, KB-Harvest, Social Media Anime, Charity Management, SVM Credit).
+  - Toàn bộ ảnh dự án là **ảnh chụp màn hình thực tế** lấy từ mã nguồn các dự án đã chạy (TechStore, HyperGlot, AI Exam, POMI Milk Tea, Lofi Portfolio, KB-Harvest, SVM Credit).
   - **Filter & Search realtime:** Lọc theo danh mục (Frontend, Full-Stack, Mobile, AI, Học thuật) kết hợp ô tìm kiếm tức thì có kỹ thuật Debounce chống lag giật.
   - **Xử lý thiếu link Demo:** Đối với các dự án chưa deploy web, nút Demo hiển thị trạng thái `disabled` kèm tooltip/ghi chú *“Chưa triển khai”* đúng 100% yêu cầu đề bài.
   - Modal xem chi tiết kiến trúc, khó khăn kỹ thuật đã giải quyết và liên kết GitHub.

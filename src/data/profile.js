@@ -34,7 +34,7 @@ export const SOCIAL_LINKS = [
 ];
 
 export const HOME_STATS = [
-  { value: 9, suffix: '+', label: 'Dự án đã xây dựng' },
+  { value: 7, suffix: '+', label: 'Dự án nổi bật & đồ án' },
   { value: 2, suffix: '', label: 'Kinh nghiệm thực tế' },
   { value: 95, suffix: '+', label: 'Điểm Lighthouse (TechStore)' },
   { value: 8, suffix: '', label: 'Chứng chỉ & bằng cấp' },

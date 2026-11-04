@@ -103,19 +103,34 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
   scroll-padding-top: calc(var(--header-h) + var(--sp-4));
 }
 
 body {
   min-height: 100vh;
+  min-height: 100dvh;
   font-family: var(--font-sans);
   font-size: var(--fs-base);
   line-height: var(--lh-base);
   color: var(--c-text);
   background-color: var(--c-bg);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 img,
@@ -135,6 +150,15 @@ textarea,
 select {
   font: inherit;
   color: inherit;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Ngăn ngừa iOS Safari tự động zoom in khi focus vào ô nhập liệu */
+input,
+textarea,
+select {
+  font-size: 16px;
 }
 
 button {
@@ -227,6 +251,7 @@ h4 {
   padding-top: calc(var(--header-h) + var(--sp-6));
   padding-bottom: var(--sp-9);
   min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .section {

@@ -3,9 +3,10 @@
   top: 0;
   left: 0;
   right: 0;
-  height: var(--header-h);
+  padding-top: env(safe-area-inset-top, 0px);
+  height: calc(var(--header-h) + env(safe-area-inset-top, 0px));
   z-index: 100;
-  transition: background-color var(--dur-base), backdrop-filter var(--dur-base), border-color var(--dur-base), box-shadow var(--dur-base);
+  transition: background-color var(--dur-base), backdrop-filter var(--dur-base), -webkit-backdrop-filter var(--dur-base), border-color var(--dur-base), box-shadow var(--dur-base);
 }
 
 .header--scrolled {

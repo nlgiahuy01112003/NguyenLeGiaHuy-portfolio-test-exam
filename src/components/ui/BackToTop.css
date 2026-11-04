@@ -1,7 +1,7 @@
 .back-to-top {
   position: fixed;
-  right: var(--sp-5);
-  bottom: var(--sp-5);
+  right: calc(var(--sp-5) + env(safe-area-inset-right, 0px));
+  bottom: calc(var(--sp-5) + env(safe-area-inset-bottom, 0px));
   z-index: 200;
   width: 46px;
   height: 46px;
@@ -25,8 +25,8 @@
 
 @media (max-width: 640px) {
   .back-to-top {
-    right: var(--sp-3);
-    bottom: var(--sp-3);
+    right: calc(var(--sp-3) + env(safe-area-inset-right, 0px));
+    bottom: calc(var(--sp-3) + env(safe-area-inset-bottom, 0px));
     width: 40px;
     height: 40px;
   }

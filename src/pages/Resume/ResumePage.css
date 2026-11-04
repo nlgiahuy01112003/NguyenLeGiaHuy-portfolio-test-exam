@@ -153,6 +153,9 @@
   border-bottom: 1px solid var(--c-border);
   padding-bottom: var(--sp-3);
   overflow-x: auto;
+  max-width: 100%;
+  min-width: 0;
+  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 
@@ -322,6 +325,7 @@
   opacity: 0;
   transition: opacity var(--dur-fast);
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .cert-card:hover .cert-overlay {

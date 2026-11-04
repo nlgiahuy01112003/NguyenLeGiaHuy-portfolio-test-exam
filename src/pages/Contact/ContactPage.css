@@ -68,7 +68,9 @@
   border: 1px solid var(--c-border);
   background: var(--c-bg-soft);
   color: var(--c-text);
-  font-size: var(--fs-sm);
+  font-size: 16px; /* Ngăn iOS Safari auto-zoom khi focus */
+  -webkit-appearance: none;
+  appearance: none;
   transition: all var(--dur-fast);
 }
 
