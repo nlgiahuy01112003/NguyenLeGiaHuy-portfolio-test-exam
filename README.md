@@ -4,7 +4,8 @@
 > **Ứng viên:** Nguyễn Lê Gia Huy  
 > **Vị trí ứng tuyển:** Frontend Developer Intern  
 > **Đơn vị tuyển dụng:** CÔNG TY TNHH CÔNG NGHỆ & GIÁO DỤC PKS  
-> **Live Demo:** [https://nguyenlegiahuy-portfolio.vercel.app](https://nguyenlegiahuy-portfolio.vercel.app) *(hoặc xem các deployment Vercel/Netlify)*  
+> **Live Demo (Vercel):** [https://test-exam-chi.vercel.app](https://test-exam-chi.vercel.app)  
+> **Portfolio Lofi cá nhân:** [https://nguyenlegiahuy-portfolio.vercel.app](https://nguyenlegiahuy-portfolio.vercel.app)  
 > **Source Code:** [https://github.com/nlgiahuy01112003/portfolio](https://github.com/nlgiahuy01112003/portfolio)
 
 ---
