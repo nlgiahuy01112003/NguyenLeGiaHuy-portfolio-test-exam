@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Lê Gia Huy — Frontend Developer Intern</title>
+    <meta
+      name="description"
+      content="Website CV cá nhân của Nguyễn Lê Gia Huy — Frontend Developer Intern. React, React Router, Framer Motion, responsive & accessible."
+    />
+    <meta name="theme-color" content="#f5f2ed" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f111a" media="(prefers-color-scheme: dark)" />
+    <meta property="og:title" content="Nguyễn Lê Gia Huy — Frontend Developer Intern" />
+    <meta property="og:description" content="Personal CV website built with React + Framer Motion." />
+    <meta property="og:image" content="/images/og-cover.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Patrick+Hand&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" as="image" href="/images/profile-photo.webp" type="image/webp" />
+
+    <!-- Áp dụng theme trước khi React mount để tránh nháy màn hình (FOUC) -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+        } catch (e) {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>Vui lòng bật JavaScript để xem website.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+

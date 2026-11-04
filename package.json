@@ -1,0 +1,29 @@
+{
+  "name": "nguyen-le-gia-huy-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Personal CV website (React + Vite + React Router + Framer Motion) — Nguyễn Lê Gia Huy, Frontend Developer Intern",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "framer-motion": "^14.9.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@vitejs/plugin-react": "^6.2.1",
+    "eslint": "^10.14.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.14.0",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.5"
+  }
+}

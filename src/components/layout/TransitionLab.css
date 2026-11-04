@@ -1,0 +1,107 @@
+.transition-lab {
+  position: relative;
+}
+
+.transition-lab__trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 6px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(var(--c-accent-rgb), 0.1);
+  color: var(--c-accent);
+  border: 1px solid rgba(var(--c-accent-rgb), 0.2);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--dur-fast);
+}
+
+.transition-lab__trigger:hover {
+  background: rgba(var(--c-accent-rgb), 0.18);
+  border-color: var(--c-accent);
+}
+
+.transition-lab__dropdown {
+  position: absolute;
+  top: calc(100% + var(--sp-2));
+  right: 0;
+  width: 260px;
+  background: var(--c-surface-solid);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: var(--sp-2);
+  z-index: 100;
+}
+
+.transition-lab__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-2) var(--sp-3);
+  border-bottom: 1px solid var(--c-border);
+  margin-bottom: var(--sp-1);
+}
+
+.transition-lab__title {
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+.transition-lab__badge {
+  font-size: 10px;
+  padding: 2px 6px;
+  background: rgba(var(--c-accent-rgb), 0.15);
+  color: var(--c-accent);
+  border-radius: 4px;
+}
+
+.transition-lab__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.transition-lab__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px var(--sp-3);
+  border-radius: var(--radius-sm);
+  text-align: left;
+  transition: background-color var(--dur-fast);
+  color: var(--c-text);
+}
+
+.transition-lab__item:hover {
+  background: rgba(var(--c-accent-rgb), 0.08);
+}
+
+.transition-lab__item--active {
+  background: rgba(var(--c-accent-rgb), 0.15);
+  color: var(--c-accent);
+  font-weight: 600;
+}
+
+.transition-lab__item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.transition-lab__item-name {
+  font-size: var(--fs-xs);
+}
+
+.transition-lab__item-hint {
+  font-size: 10px;
+  color: var(--c-text-muted);
+}
+
+@media (max-width: 640px) {
+  .transition-lab__trigger-label {
+    display: none;
+  }
+}
