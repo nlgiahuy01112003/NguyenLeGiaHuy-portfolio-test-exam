@@ -19,9 +19,16 @@ export default function CustomCursor() {
     if (!isFinePointer) return;
 
     const handleMouseMove = (e) => {
-      mouseX.set(e.clientX);
-      mouseY.set(e.clientY);
-      if (!isVisible) setIsVisible(true);
+      if (!isVisible) {
+        mouseX.jump?.(e.clientX);
+        mouseY.jump?.(e.clientY);
+        smoothX.jump?.(e.clientX);
+        smoothY.jump?.(e.clientY);
+        setIsVisible(true);
+      } else {
+        mouseX.set(e.clientX);
+        mouseY.set(e.clientY);
+      }
     };
 
     const handleMouseOver = (e) => {

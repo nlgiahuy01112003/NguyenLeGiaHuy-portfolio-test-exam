@@ -6,26 +6,31 @@
   pointer-events: none;
   z-index: 9999;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .custom-cursor-dot {
   width: 6px;
   height: 6px;
+  margin-top: -3px;
+  margin-left: -3px;
   background-color: var(--c-accent);
 }
 
 .custom-cursor-follower {
   width: 32px;
   height: 32px;
+  margin-top: -16px;
+  margin-left: -16px;
   border: 1.5px solid var(--c-accent);
   background-color: rgba(var(--c-accent-rgb), 0.04);
-  transition: width 0.2s ease-out, height 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
+  transition: width 0.2s ease-out, height 0.2s ease-out, margin 0.2s ease-out, background-color 0.2s ease-out, border-color 0.2s ease-out;
 }
 
 .custom-cursor-follower--hover {
   width: 48px;
   height: 48px;
+  margin-top: -24px;
+  margin-left: -24px;
   background-color: rgba(var(--c-accent-rgb), 0.15);
   border-color: var(--c-accent-2);
 }
